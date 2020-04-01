@@ -1,0 +1,14 @@
+{
+  "@class" : "org.apereo.cas.services.OidcRegisteredService",
+  "clientId": "client",
+  "clientSecret": "secret",
+  "serviceId" : "http://localhost:8080/log",
+  "name": "OIDC",
+  "id": 2,
+  "attributeReleasePolicy" : {
+    "@class" : "org.apereo.cas.services.ReturnAllowedAttributeReleasePolicy",
+    "allowedAttributes" : [ "java.util.ArrayList", [ "cn", "mail", "sn" ] ]
+  },
+  "supportedGrantTypes": [ "java.util.HashSet", [ "password" ] ],
+  "supportedResponseTypes": [ "java.util.HashSet", [ "code" ] ]
+}
